@@ -9,8 +9,6 @@
 
 The backend runs on port 3000 by default, and the frontend on port 5173.
 
----
-
 ## How to Simulate the Replay
 
 1. Go to the dashboard in the frontend UI.
@@ -18,8 +16,6 @@ The backend runs on port 3000 by default, and the frontend on port 5173.
 3. You can paste in a transcript by pressing the button on the dashboard, bringing up an interactive modal.
 4. Pressing submit will lead you to the analysis page.
 5. Press **Play** to start the incident replay. Transcript messages and AI suggestions will appear in real time.
-
----
 
 ## Decisions
 
@@ -34,8 +30,6 @@ The backend runs on port 3000 by default, and the frontend on port 5173.
 - **Real-Time UX:** Implemented polling and autoscroll for a live and responsive feel. Timeline and transcript are visible for context.
 - **UI/UX:** Prioritized clarity, accessibility, and speed. Added keyboard shortcuts and clear color coding for suggestion types.
 
----
-
 ## What I'd'd Add or Improve With More Time
 
 - **Websockets:** Replace polling with real-time updates via websockets for even faster UI feedback.
@@ -44,8 +38,6 @@ The backend runs on port 3000 by default, and the frontend on port 5173.
 - **Performance:** Optimize backend jobs and frontend rendering for longer incidents.
 - **UI Polish:** Add animations, better mobile support, and more customization options.
 - **Accessibility:** Add accessibility features such as ARIA labels, improved keyboard navigation, and screen reader support to ensure the app is usable by everyone.
-
----
 
 ## How Long I Spent on the Project
 
