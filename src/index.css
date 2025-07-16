@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Anthropic Design System - Light Mode */
+    --background: 44 25% 96%; /* #F6F5F2 off-white canvas */
+    --foreground: 0 0% 10%; /* #1A1A1A charcoal text */
+
+    --card: 44 25% 96%; /* matches background */
+    --card-foreground: 0 0% 10%;
+
+    --popover: 44 25% 96%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 10%; /* charcoal for primary actions */
+    --primary-foreground: 44 25% 96%;
+
+    --secondary: 165 25% 76%; /* #BFD3CE sage for secondary actions */
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 32 20% 85%; /* #E7DDD0 sand for muted elements */
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 243 35% 82%; /* #CBCBE6 lavender for accents */
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 44 25% 96%;
+
+    --border: 32 20% 85%;
+    --input: 32 20% 85%;
+    --ring: 0 0% 10%;
+
+    --radius: 0.5rem;
+
+    /* Custom Anthropic tokens */
+    --sand: 32 20% 85%; /* #E7DDD0 pastel beige */
+    --sage: 165 25% 76%; /* #BFD3CE pastel sage */
+    --lavender: 243 35% 82%; /* #CBCBE6 pastel lavender */
+    --ink: 0 0% 5%; /* accent black for headings */
+    
+    /* Shadows */
+    --shadow-idle: 0 1px 3px hsl(0 0% 0% / 0.1);
+    --shadow-hover: 0 4px 12px hsl(0 0% 0% / 0.15);
+    
+    /* Transitions */
+    --transition-smooth: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Anthropic Design System - Dark Mode */
+    --background: 0 0% 11%; /* #1B1B1D dark canvas */
+    --foreground: 44 25% 96%;
+
+    --card: 0 0% 11%;
+    --card-foreground: 44 25% 96%;
+
+    --popover: 0 0% 11%;
+    --popover-foreground: 44 25% 96%;
+
+    --primary: 44 25% 96%;
+    --primary-foreground: 0 0% 11%;
+
+    --secondary: 165 15% 25%; /* darker sage */
+    --secondary-foreground: 44 25% 96%;
+
+    --muted: 32 10% 25%; /* darker sand */
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 243 20% 35%; /* darker lavender */
+    --accent-foreground: 44 25% 96%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 44 25% 96%;
+
+    --border: 32 10% 25%;
+    --input: 32 10% 25%;
+    --ring: 44 25% 96%;
+
+    /* Custom dark mode tokens */
+    --sand: 32 10% 25%;
+    --sage: 165 15% 25%;
+    --lavender: 243 20% 35%;
+    --ink: 44 25% 96%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+}
